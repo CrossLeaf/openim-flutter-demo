@@ -1,0 +1,132 @@
+{
+  "dart.debugExternalPackageLibraries": true,
+  "dart.debugSdkLibraries": false,
+  "dart.flutterSdkPath": ".fvm/versions/3.29.3",
+  "dart.lineLength": 120,
+  "dart.insertArgumentPlaceholders": true,
+  "dart.completeFunctionCalls": true,
+  "dart.closingLabels": true,
+  "dart.enableSnippets": true,
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "dart.flutterSelectDeviceWhenConnected": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      120
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "files.associations": {
+    "*.dart": "dart",
+    "pubspec.yaml": "yaml",
+    "pubspec.lock": "yaml",
+    "analysis_options.yaml": "yaml"
+  },
+  "files.watcherExclude": {
+    "**/build/**": true,
+    "**/.dart_tool/**": true,
+    "**/.flutter-plugins": true,
+    "**/.flutter-plugins-dependencies": true,
+    "**/android/.gradle/**": true,
+    "**/android/build/**": true,
+    "**/ios/build/**": true,
+    "**/ios/Pods/**": true,
+    "**/ios/.symlinks/**": true
+  },
+  "search.exclude": {
+    "**/build/**": true,
+    "**/.dart_tool/**": true,
+    "**/.flutter-plugins": true,
+    "**/.flutter-plugins-dependencies": true,
+    "**/android/.gradle/**": true,
+    "**/android/build/**": true,
+    "**/ios/build/**": true,
+    "**/ios/Pods/**": true,
+    "**/ios/.symlinks/**": true,
+    "**/coverage/**": true
+  },
+  "files.exclude": {
+    "**/.dart_tool": true,
+    "**/.flutter-plugins": true,
+    "**/.flutter-plugins-dependencies": true,
+    "**/build": true,
+    "android/.gradle": true,
+    "android/build": true,
+    "ios/build": true,
+    "ios/Pods": true,
+    "ios/.symlinks": true
+  },
+  "terminal.integrated.env.osx": {
+    "PATH": "${env:PATH}:${workspaceFolder}/scripts"
+  },
+  "terminal.integrated.env.linux": {
+    "PATH": "${env:PATH}:${workspaceFolder}/scripts"
+  },
+  "terminal.integrated.env.windows": {
+    "PATH": "${env:PATH};${workspaceFolder}\\scripts"
+  },
+  "extensions.ignoreRecommendations": false,
+  "git.ignoreLimitWarning": true,
+  "editor.minimap.enabled": true,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 120,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "problems.showCurrentInStatus": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "emmet.includeLanguages": {
+    "dart": "html"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "tasks.saveBeforeRun": "always",
+  "debug.allowBreakpointsEverywhere": true,
+  "debug.console.wordWrap": true,
+  "debug.inlineValues": "auto",
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#4fc3f7",
+    "titleBar.activeForeground": "#000000",
+    "titleBar.inactiveBackground": "#4fc3f755",
+    "titleBar.inactiveForeground": "#000000aa"
+  },
+  "workbench.statusBar.visible": true,
+  "workbench.panel.defaultLocation": "bottom",
+  "recommendations": [
+    "dart-code.dart-code",
+    "dart-code.flutter",
+    "ms-vscode.vscode-json",
+    "redhat.vscode-yaml",
+    "ms-vscode.vscode-markdown",
+    "github.vscode-pull-request-github"
+  ]
+}

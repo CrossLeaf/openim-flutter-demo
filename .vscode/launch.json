@@ -1,0 +1,210 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "🚀 OpenIM Demo (Debug)",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/main.dart",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "debugConsole",
+            "enableAsserts": true,
+            "dartSdkPath": null,
+            "flutterSdkPath": null,
+            "vmAdditionalArgs": [],
+            "toolArgs": []
+        },
+        {
+            "name": "🔧 OpenIM Demo (Debug - Android)",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/main.dart",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "debugConsole",
+            "enableAsserts": true,
+            "deviceId": "android",
+            "vmAdditionalArgs": [],
+            "toolArgs": [
+                "--flavor",
+                "debug",
+                "--dart-define",
+                "FLUTTER_TARGET=android"
+            ]
+        },
+        {
+            "name": "🍎 OpenIM Demo (Debug - iOS)",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/main.dart",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "debugConsole",
+            "enableAsserts": true,
+            "deviceId": "ios",
+            "vmAdditionalArgs": [],
+            "toolArgs": [
+                "--flavor",
+                "debug",
+                "--dart-define",
+                "FLUTTER_TARGET=ios"
+            ]
+        },
+        {
+            "name": "🏃 OpenIM Demo (Profile)",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/main.dart",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "debugConsole",
+            "enableAsserts": false,
+            "vmAdditionalArgs": [],
+            "toolArgs": [
+                "--profile"
+            ]
+        },
+        {
+            "name": "🚀 OpenIM Demo (Release)",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/main.dart",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "debugConsole",
+            "enableAsserts": false,
+            "vmAdditionalArgs": [],
+            "toolArgs": [
+                "--release"
+            ]
+        },
+        {
+            "name": "🌐 OpenIM Demo (Web)",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/main.dart",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "debugConsole",
+            "enableAsserts": true,
+            "deviceId": "chrome",
+            "vmAdditionalArgs": [],
+            "toolArgs": [
+                "--web-port",
+                "3000",
+                "--web-hostname",
+                "localhost"
+            ]
+        },
+        {
+            "name": "🧪 OpenIM Demo (Tests)",
+            "type": "dart",
+            "request": "launch",
+            "program": "test/widget_test.dart",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "debugConsole",
+            "enableAsserts": true,
+            "vmAdditionalArgs": [],
+            "toolArgs": []
+        },
+        {
+            "name": "📱 OpenIM Demo (指定設備)",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/main.dart",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "debugConsole",
+            "enableAsserts": true,
+            "deviceId": "${input:deviceId}",
+            "vmAdditionalArgs": [],
+            "toolArgs": []
+        },
+        {
+            "name": "🔍 OpenIM Demo (除錯模式 + 詳細日誌)",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/main.dart",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "debugConsole",
+            "enableAsserts": true,
+            "vmAdditionalArgs": [
+                "--enable-vm-service",
+                "--pause-isolates-on-start",
+                "--pause-isolates-on-exit"
+            ],
+            "toolArgs": [
+                "--verbose",
+                "--debug"
+            ]
+        },
+        {
+            "name": "⚡ OpenIM Demo (熱重載)",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/main.dart",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "debugConsole",
+            "enableAsserts": true,
+            "vmAdditionalArgs": [],
+            "toolArgs": [
+                "--hot"
+            ]
+        },
+        {
+            "name": "🎯 OpenIM Demo (特定入口點)",
+            "type": "dart",
+            "request": "launch",
+            "program": "${input:entryPoint}",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "debugConsole",
+            "enableAsserts": true,
+            "vmAdditionalArgs": [],
+            "toolArgs": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "deviceId",
+            "description": "請選擇設備 ID",
+            "type": "pickString",
+            "options": [
+                "android",
+                "ios",
+                "chrome",
+                "macos",
+                "windows",
+                "linux"
+            ]
+        },
+        {
+            "id": "entryPoint",
+            "description": "請輸入入口點文件路徑",
+            "type": "promptString",
+            "default": "lib/main.dart"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "🔄 同時啟動 Android 和 iOS",
+            "configurations": [
+                "🔧 OpenIM Demo (Debug - Android)",
+                "🍎 OpenIM Demo (Debug - iOS)"
+            ],
+            "stopAll": true
+        },
+        {
+            "name": "🧪 測試 + 除錯",
+            "configurations": [
+                "🧪 OpenIM Demo (Tests)",
+                "🚀 OpenIM Demo (Debug)"
+            ],
+            "stopAll": false
+        }
+    ]
+}

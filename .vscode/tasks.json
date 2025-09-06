@@ -1,0 +1,438 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "🚀 啟動應用程式",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "start"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🔧 Debug 模式運行",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "debug"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "📱 構建 Android APK",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "build",
+                "android"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🚀 構建 Release APK",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "build",
+                "android",
+                "--release"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🍎 構建 iOS 應用",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "build",
+                "ios"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": [],
+            "options": {
+                "env": {
+                    "PATH": "${env:PATH}"
+                }
+            }
+        },
+        {
+            "label": "🧪 執行測試",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "dev",
+                "test"
+            ],
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "📊 執行測試 (含覆蓋率)",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "test-all"
+            ],
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🔍 程式碼分析",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "dev",
+                "analyze"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "✨ 格式化程式碼",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "dev",
+                "format"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🔄 檢查程式碼 (分析+格式化)",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "check"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🧹 清理專案",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "dev",
+                "clean"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "📦 更新依賴",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "dev",
+                "deps"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "⚙️ 初始化開發環境",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "tools",
+                "setup"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🩺 檢查 Flutter 環境",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "dev",
+                "doctor"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "📱 列出可用設備",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "dev",
+                "devices"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "📋 顯示專案狀態",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "tools",
+                "status"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🔨 生成程式碼",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "dev",
+                "gen"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "📊 查看設備日誌",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "dev",
+                "logs"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🔄 熱重啟",
+            "type": "shell",
+            "command": "flutter",
+            "args": [
+                "run",
+                "--hot"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🔧 附加到進程",
+            "type": "shell",
+            "command": "flutter",
+            "args": [
+                "attach"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "📱 連接到 Android 設備",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "dev",
+                "run",
+                "--device",
+                "android"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🍎 連接到 iOS 設備",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "dev",
+                "run",
+                "--device",
+                "ios"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🌐 在 Web 上運行",
+            "type": "shell",
+            "command": "flutter",
+            "args": [
+                "run",
+                "-d",
+                "chrome"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🚀 Profile 模式運行",
+            "type": "shell",
+            "command": "./scripts/app.sh",
+            "args": [
+                "dev",
+                "run",
+                "--profile"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🏗️ 建構並安裝到設備",
+            "type": "shell",
+            "command": "flutter",
+            "args": [
+                "install"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

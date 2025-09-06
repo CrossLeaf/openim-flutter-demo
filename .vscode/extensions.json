@@ -1,0 +1,42 @@
+{
+    "recommendations": [
+        // Flutter 和 Dart 開發必需
+        "dart-code.dart-code",
+        "dart-code.flutter",
+        // 程式碼品質和格式化
+        "ms-vscode.vscode-json",
+        "redhat.vscode-yaml",
+        "davidanson.vscode-markdownlint",
+        // Git 和版本控制
+        "github.vscode-pull-request-github",
+        "eamodio.gitlens",
+        // 開發工具
+        "ms-vscode.vscode-markdown",
+        "ms-vscode.hexeditor",
+        "ms-vscode.references-view",
+        // 程式碼片段和自動完成
+        "christian-kohler.path-intellisense",
+        "formulahendry.auto-rename-tag",
+        // 主題和外觀 (可選)
+        "pkief.material-icon-theme",
+        "equinusocio.vsc-material-theme",
+        // 實用工具
+        "ms-vscode.live-server",
+        "wayou.vscode-todo-highlight",
+        "gruntfuggly.todo-tree",
+        // 資料格式支援
+        "ms-vscode.xml",
+        "ms-vscode.gradle-language",
+        // 行動開發相關
+        "ms-vscode.android-intellij",
+        // 測試相關
+        "hbenl.vscode-test-explorer",
+        "littlefoxteam.vscode-python-test-adapter"
+    ],
+    "unwantedRecommendations": [
+        // 避免安裝可能衝突的擴充功能
+        "ms-python.python",
+        "ms-vscode.cpptools",
+        "ms-dotnettools.csharp"
+    ]
+}

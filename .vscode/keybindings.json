@@ -1,0 +1,196 @@
+[
+    // Flutter 開發快捷鍵
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.tasks.runTask",
+        "args": "🚀 啟動應用程式",
+        "when": "!inDebugMode"
+    },
+    {
+        "key": "cmd+shift+r",
+        "command": "workbench.action.tasks.runTask",
+        "args": "🔧 Debug 模式運行"
+    },
+    {
+        "key": "cmd+b",
+        "command": "workbench.action.tasks.runTask",
+        "args": "📱 構建 Android APK"
+    },
+    {
+        "key": "cmd+shift+b",
+        "command": "workbench.action.tasks.runTask",
+        "args": "🚀 構建 Release APK"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.tasks.runTask",
+        "args": "🧪 執行測試"
+    },
+    {
+        "key": "cmd+shift+t",
+        "command": "workbench.action.tasks.runTask",
+        "args": "📊 執行測試 (含覆蓋率)"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.tasks.runTask",
+        "args": "🔍 程式碼分析"
+    },
+    {
+        "key": "cmd+shift+f",
+        "command": "workbench.action.tasks.runTask",
+        "args": "✨ 格式化程式碼"
+    },
+    {
+        "key": "cmd+k cmd+c",
+        "command": "workbench.action.tasks.runTask",
+        "args": "🧹 清理專案"
+    },
+    {
+        "key": "cmd+k cmd+d",
+        "command": "workbench.action.tasks.runTask",
+        "args": "📱 列出可用設備"
+    },
+    {
+        "key": "cmd+k cmd+s",
+        "command": "workbench.action.tasks.runTask",
+        "args": "📋 顯示專案狀態"
+    },
+    // 除錯相關快捷鍵
+    {
+        "key": "f5",
+        "command": "workbench.action.debug.start",
+        "when": "!inDebugMode"
+    },
+    {
+        "key": "shift+f5",
+        "command": "workbench.action.debug.stop",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "ctrl+shift+f5",
+        "command": "workbench.action.debug.restart",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "f6",
+        "command": "workbench.action.debug.pause",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "f10",
+        "command": "workbench.action.debug.stepOver",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "f11",
+        "command": "workbench.action.debug.stepInto",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "shift+f11",
+        "command": "workbench.action.debug.stepOut",
+        "when": "inDebugMode"
+    },
+    // Flutter 特定命令
+    {
+        "key": "cmd+k cmd+r",
+        "command": "dart.hotReload",
+        "when": "dart-code:dartProjectLoaded"
+    },
+    {
+        "key": "cmd+k cmd+shift+r",
+        "command": "dart.hotRestart",
+        "when": "dart-code:dartProjectLoaded"
+    },
+    {
+        "key": "cmd+k cmd+p",
+        "command": "dart.openDevTools",
+        "when": "dart-code:dartProjectLoaded"
+    },
+    {
+        "key": "cmd+k cmd+i",
+        "command": "dart.showInspector",
+        "when": "dart-code:dartProjectLoaded"
+    },
+    {
+        "key": "cmd+k cmd+o",
+        "command": "dart.openObservatory",
+        "when": "dart-code:dartProjectLoaded"
+    },
+    // 終端機快捷鍵
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "workbench.action.terminal.new"
+    },
+    // 檔案操作
+    {
+        "key": "cmd+shift+n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "cmd+shift+alt+n",
+        "command": "explorer.newFolder"
+    },
+    // 搜尋和導航
+    {
+        "key": "cmd+shift+p",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "cmd+p",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "cmd+shift+o",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.showAllSymbols",
+        "when": "!dart-code:dartProjectLoaded"
+    },
+    // Git 操作
+    {
+        "key": "cmd+shift+g",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "cmd+k cmd+g",
+        "command": "git.openChange"
+    },
+    // 視窗管理
+    {
+        "key": "cmd+k cmd+w",
+        "command": "workbench.action.closeAllEditors"
+    },
+    {
+        "key": "cmd+k cmd+shift+w",
+        "command": "workbench.action.closeAllGroups"
+    },
+    // 自訂任務快捷鍵 (可根據需要調整)
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.debug.selectandstart",
+        "args": "🚀 OpenIM Demo (Debug)"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.action.debug.selectandstart",
+        "args": "🔧 OpenIM Demo (Debug - Android)"
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.debug.selectandstart",
+        "args": "🍎 OpenIM Demo (Debug - iOS)"
+    },
+    {
+        "key": "cmd+4",
+        "command": "workbench.action.debug.selectandstart",
+        "args": "🌐 OpenIM Demo (Web)"
+    }
+]
